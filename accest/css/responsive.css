@@ -1,0 +1,157 @@
+/* mobile */
+
+@media (max-width: 740px) {
+    
+    /* header */
+    
+    #nav>li{
+        display: block;
+    }
+    
+    #header{
+        height: auto;
+        overflow: hidden;
+        position: fixed;
+        background-color: black;
+        z-index: 3;
+    }
+
+    .search{
+        display: none;
+    }
+    
+    .mobile-menu{
+        float: right; 
+        padding: 16px 0;
+    }
+
+    .mobile-menu .mb-menu{
+        color: white;
+        padding: 16px;
+    }
+
+    .mobile-menu:hover .mb-menu{
+        background-color: #ccc;
+        color: black;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #header .mobile-menu{
+        display: block;
+        position: absolute;
+        top: 0; 
+        right: 0;
+    }
+
+    #nav .liheader:not(:first-child) {
+        display: none;
+    }
+
+    .liheader.open {
+        display: block !important;
+    }
+
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav > .liheader > a{
+        width: 100%;
+    }
+
+    .subnav{
+        top: 46px; 
+    }
+
+    #nav>li:last-child:hover .subnav{
+        background-color: #333;
+        display: initial;
+    }
+
+    /* contact */
+
+    .contact{
+        padding: 0 16px 40px;
+    }
+
+    .aboutcontent,.smalltour{
+        padding: 0 16px;
+    }
+
+.about,.smalltour,.about>p,.smallplace,
+.tickets,.place1 > div > .puttonbuyticket,
+.contact,.contactcontent,.contactinfo,
+.contactform input, .contactname,
+.s-row-full{width: 100%;}
+
+.team .member{
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.content>h2 , .content>p {
+    display: none;
+}
+
+.member>img{
+    width: 230px;
+    height: 230px;
+}
+
+.tickets>li{
+    margin-right: 50%;
+}
+
+.place1 > div > .puttonbuyticket {
+    text-align: center;
+}
+
+.contactname{
+    padding-bottom: 8px;
+}
+
+.contactmassage{
+    width: 100%;
+}
+
+.contactname,.contactmassage,.contactemail{
+    width: 100%;
+}
+
+.contactform{
+    float: none;
+}
+
+}
+
+
+/* responsive tablet & mobile */
+
+
+@media (max-width:1023px) {
+  
+    input{
+        padding: 16px;
+    }
+
+    .mfooter>a{
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .mfooter{
+        margin-top: 150px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .mfooter>p>a{
+        font-size: 32px;
+    }
+}
+
+

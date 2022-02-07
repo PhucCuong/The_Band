@@ -1,0 +1,562 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+.html{
+    scroll-behavior: smooth
+}
+
+body{
+    background-color:white;
+    max-width: 100%;
+}
+
+.text-white{
+    color: white !important
+}
+
+     /*  */
+     
+.search{
+    color: white;
+    cursor: pointer;    
+    width: 46px;
+    height: 46px;
+    padding: 15px 24px;
+    box-sizing: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 36px;
+}
+
+.search:hover{
+    background-color: #f44336;
+}
+
+/* nav */
+
+#nav{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative; 
+}
+
+#header{
+    background-color: black;
+    width: 100%;
+    height: 46px;
+}
+
+.liheader{
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+}
+
+.liheader a{
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;  
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+.subnav{
+    position: absolute;
+    list-style-type: none;
+    background-color: #fff;
+    width: 160px;
+    display: none;
+    z-index: 3;
+}
+
+.lisub > a{
+    color: black;
+}
+
+#header .mobile-menu{
+    display: none;
+}
+
+/* hover */
+
+.liheader:hover > a{
+    background-color: #ccc;
+    color: black;
+}
+
+.liheader:hover .subnav{
+    display: block;
+}
+
+.lisub:hover {
+    background-color: #ccc
+}
+
+
+
+/* slider */
+
+.slider{ 
+   background:  url('../images/slider.jpg') top center  no-repeat  ;
+   padding-top: 50%; 
+   background-size: cover;
+}
+
+
+.slider{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    bottom: 32px;
+    width: 100%; 
+    text-align: center; 
+    font-size: 15px;
+    color: white;
+}
+
+ .slider p{
+     margin-top:  25px;
+}
+
+ /* noidung-about */
+
+ .noidung{
+     padding:46px 0;
+}
+
+ .about{ 
+    width: 770px;
+    margin: auto;
+}
+
+ .heading{
+     text-align: center; 
+     font-weight: 400;
+    letter-spacing: 4px;
+}
+
+ .subheading{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+p.subheading + p{
+    text-align: justify; 
+}
+
+
+
+.team .member{
+    float: left; 
+    text-align: center;
+    width: calc(100% / 3); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+clear{
+    clear: both;
+}
+
+.team{
+    margin-top: 48px; 
+    margin-bottom: 110px;
+}
+
+img{
+    width: 154px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.clear{
+    clear: both;
+}
+
+/* noidung-tour */
+
+.tour{
+    background-color: black; 
+    padding-bottom: 94px;
+}
+
+.smalltour{
+    width: 770px;
+    margin: auto;
+}
+
+.tickets{
+    background-color: white; 
+    width: 770px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.tour .heading{
+    padding-top: 85px;
+}
+
+.tour .tickets li{
+    padding: 16px 0;
+    font-size: 15px;
+    padding: 8px 16px ;
+}
+
+.sold{
+    border-bottom: #ddd solid;
+}
+
+.smallsold{
+    margin: 0 0 0 16px;
+    background-color: #f44336;
+    padding: 0 8px; 
+    color: #fff;
+}
+
+.three{
+    float: right;
+    border-radius: 50%;
+    background-color: black;
+    color: white; 
+    padding: 0 6px;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+.tickets li{
+    overflow: hidden;
+}
+
+/* place */
+
+.place{
+    margin: 17px -8px 0 
+}
+
+.smallplace{
+    float: left; 
+    width: calc(100% / 3);
+    padding: 0 8px 16px 8px;
+}
+
+.smallplace>img{
+    width: 100%; 
+    height: 184px;
+    border-radius: 0px; 
+    display: block;
+}
+
+.place1{
+    background-color: white;
+    font-family: sans-serif;
+    padding-bottom: 16px; 
+    font-size: 15px;
+}
+
+h3 , .place1>p , .place1>div {
+    margin: 0 16px 16px 16px;
+}
+
+h3{
+    padding-top: 15px;
+}
+
+.place1>div>.puttonbuyticket{
+    text-decoration: none;
+    color: white;
+    background-color: black; 
+    padding: 8px 16px;
+    border: none;
+}
+
+.place1>div{
+    margin-top: 32px;
+}
+
+.mo{
+    opacity: 0.6;
+}
+
+.smallplace>img:hover{
+    opacity: 0.6;
+}
+
+.place1>div>.puttonbuyticket:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+
+            /* modal */
+
+.modal{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none; 
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    animation: slowly ease 0.5s;
+}
+
+.modal.open{ 
+    display: flex !important;
+}
+
+.modalcontainer{
+    background-color: white;
+    height: 470px;
+    width: 900px;
+    position: relative;
+    max-width: calc(100% - 32px);
+}
+
+.js-modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    color: white;
+}
+
+.modalheader{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ti-bag{
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    margin-left: 20px;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.cat{
+    padding: 16px;
+    display: block;
+    font-size: 15px;
+}
+
+.modalput{
+    display: block;
+    padding: 8;
+    margin: 16px 0;
+    padding: 10px 0;
+    width: 100%; 
+    border: 1px solid #ccc;
+}
+
+.puttonpay{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #009688;
+    padding: 18px 0;
+}
+
+.modalfooter p{
+    float: right;
+    margin-right: 16px;
+}
+
+.modalfooter p a{
+    color: #2196f3;
+    text-decoration: underline;
+    padding-left: 4px;
+}
+
+.js-modal-close:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer
+}
+
+.puttonpay:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/* keyframe */
+
+@keyframes slowly{
+    from{transform: translateY(-100px);}
+    to{transform: translateY(0);}
+}
+
+/*      contact    */
+
+.contactform{
+    float: right
+}
+
+.row-half{
+    width: 50%;
+}
+
+.contact .heading{
+    padding-top: 85px;
+}
+
+.contact{
+    padding-bottom: 40px;
+}
+
+.contactcontent{
+    width: 770px;
+    margin: auto;
+    margin-top: 52px;
+}
+
+.col-half{
+    width: 50%; 
+    float: left;
+    height: 82px;
+    margin-bottom: 16px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+input{
+    padding: 10px 16px;
+}
+
+.contace .co-half .p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 30px; 
+} 
+
+.contactcontent{
+    overflow: hidden;
+}
+
+
+.contactname{
+    float: left;
+    margin-right: 34px;
+
+}
+.contactemail{
+    display: inline-block;
+    float: right;
+}
+
+.contactform input{
+    border: 1px solid #ccc;
+}
+
+.contactform input:focus-visible{
+    border: 1px solid #000;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+}
+
+.contactmassage{
+    margin: 8px 0;
+    width: 384px;
+}
+
+.contactsend{
+    float: right; 
+    background-color: black;
+    color: white;
+}
+
+.contactsend:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.contactinfo{
+    line-height: 24px;
+}
+
+/* map */
+
+.map img{
+    width: 100%;
+    height: 462px;
+    border-radius: 0;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 216px;
+}
+
+.mfooter{
+    margin-top: 70px; 
+    margin-left: 42%;
+    font-size: 24px;
+}
+
+footer p{
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
